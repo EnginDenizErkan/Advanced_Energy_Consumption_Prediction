@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     # Define the command to run your Streamlit app
     gui_path = app_config.config.get("gui_path")
-    streamlit_command = f"streamlit run {gui_path} --server.port=8501 --server.address=0.0.0.0"
+    streamlit_command = f"streamlit run {gui_path} --server.port=8501 --server.address=localhost"
     # Start the Streamlit app in the background
     streamlit_process = subprocess.Popen(streamlit_command, shell=True)
 
